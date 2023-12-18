@@ -1,0 +1,4 @@
+---
+kind: wasmer.io/App.v0
+name: wasmer-edge-svelte-sample
+package: wasmer-tests/wasmer-edge-svelte-sample
