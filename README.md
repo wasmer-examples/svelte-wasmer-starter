@@ -1,38 +1,33 @@
-# create-svelte
+This is a [Svelte](https://nextjs.org/) project bootstrapped with `npm create svelte@latest my-app`.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Getting Started
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+First, run the development server:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Building
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
-To create a production version of your app:
+## Deploy on Wasmer Edge
+
+The easiest way to deploy your Svelte app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
+
+Live example: http://wasmer-edge-svelte-sample.wasmer.app/
+
+First, you'll need to run `npm run build`, and then, to deploy to Wasmer Edge:
 
 ```bash
-npm run build
+wasmer deploy
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> [!NOTE]
+> You will need to have Wasmer installed (check out [the docs to install the Wasmer CLI](https://docs.wasmer.io/install)!). 
+> You will also need to change the namespace in `wasmer.toml` to your own namespace and app name in `app.yaml` to your own app name.
