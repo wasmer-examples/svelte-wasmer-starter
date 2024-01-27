@@ -14,13 +14,24 @@ pnpm dev
 bun dev
 ```
 
+You can also run the Svelte starter template easily using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
+
+
+```bash
+wasmer run wasmer-examples/svelte-wasmer-starter --net -- --port 5173
+```
+
+> [!TIP]
+> You can also run `wasmer run . --net -- --port 5173` in the root of this repo, after running `npm run build`
+
+
 Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
 ## Deploy on Wasmer Edge
 
 The easiest way to deploy your Svelte app is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
-Live example: http://wasmer-edge-svelte-sample.wasmer.app/
+Live example: https://wasmer-edge-svelte-sample.wasmer.app/
 
 First, you'll need to run `npm run build`, and then, to deploy to Wasmer Edge:
 
