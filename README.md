@@ -18,7 +18,7 @@ You can also run the Svelte starter template easily using Wasmer (check out the 
 
 ```bash
 npm run build
-wasmer run . --net -- --port 5173
+wasmer run . -- --port 5173
 ```
 
 Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
